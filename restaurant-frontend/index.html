@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Properties</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Vikas Restaurant</h1>
+    </header>
+    <section id="login-section">
+        <form id="login-form" method="post">
+            <h2>Login</h2>
+            <input name="name" type="text" placeholder="Name">
+            <input name="mobile" type="number" placeholder="Mobile Number">
+            <input name="table" type="number" placeholder="Table Number">
+            <button type="submit">Order Now</button>
+        </form>
+    </section>
+
+
+    <section id="order-section" class="show">
+        <div class="user-details">
+            <div id="user-details"></div>
+            <button id="cart-btn">Cart: 0 Items</button>
+            <button id="logout-btn" class="danger">Logout</button>
+        </div>
+
+        
+        <h2>Please select your order!</h2>
+
+        <div class="food-menu">
+            <!-- <div class="card">
+                <img alt="Kadai Paneer" src="https://www.whiskaffair.com/wp-content/uploads/2020/08/Kadai-Paneer-2-3.jpg" />
+                <div class="card-header">
+                    <div>
+                        <h3>Kadai Paneer</h3>
+                        <span class="price">220 RS</span>
+                    </div>
+                    <div>
+                        <button>Add</button>
+                        <div class="quantity-menu">
+                            <button><img alt="minus" src="icons/minus.svg"></button>
+                            <span>10</span>
+                            <button><img alt="minus" src="icons/plus.svg"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>    -->
+            
+            <div class="card">
+                <img alt="Kadai Paneer" src="https://www.whiskaffair.com/wp-content/uploads/2020/08/Kadai-Paneer-2-3.jpg" />
+                <div class="card-header">
+                    <div>
+                        <h3>Kadai Paneer</h3>
+                        <span class="price">220 RS</span>
+                    </div>
+                    <button>Add</button>
+                </div>
+            </div>  
+            
+        </div>
+    </section>
+
+    <div class="modal" id="cart-modal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>Cart</h3>
+                <button class="close"><img src="icons/x.svg" alt="close modal"></button>
+            </div>
+            <div class="items">
+                <!-- 
+                <div class="cart-item">
+                    <span class="title">Palak Paneer</span>
+                    <span class="price">200.00</span>
+                    <div class="quantity-menu">
+                        <button><img alt="minus" src="icons/minus.svg"></button>
+                        <span>10</span>
+                        <button><img alt="minus" src="icons/plus.svg"></button>
+                    </div>
+                </div>
+                 -->
+            </div>
+            <div class="cart-footer"></div>
+        </div>
+    </div>
+    <!-- <script src="main.js"></script> -->
+</body>
+
+</html>

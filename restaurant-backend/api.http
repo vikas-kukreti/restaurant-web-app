@@ -1,0 +1,16 @@
+GET /
+SecretKey: 16378346
+Host: localhost:8090
+###
+POST /
+Host: localhost:8090
+###
+POST /login
+Host: localhost:8080
+Content-Type: application/json
+
+{
+    "mobile": "8445088973",
+    "name": "Vikas Kukreti",
+    "table": 25
+}
